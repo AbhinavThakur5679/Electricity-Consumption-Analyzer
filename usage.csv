@@ -1,0 +1,15 @@
+#testcase1
+Month,Units
+Jan,200
+Feb,250
+Mar,300
+#testcase2
+Jan,150
+#testcase3
+Jan,200
+Feb,abc
+Mar,-30
+create_test_csv("normal_input.csv", "Jan,200\nFeb,250\nMar,300")
+    create_test_csv("boundary_input.csv", "Jan,150")
+    create_test_csv("invalid_input.csv", "Jan,200\nFeb,abc\nMar,-30")
+
